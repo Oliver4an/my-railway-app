@@ -6,12 +6,7 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-# 🔹 Notion API Key（這部分不變）
-NOTION_API_KEY = "secret_sS3wjhgH0z8yPr2DQODYaHmbobxxNOoQR7lT6W26nHo"
-NOTION_DATABASE_ID = "1a0afdc55d6e804281c8d3aac50ba583"
 
-# 🔹 Groq API Key（請換成你的 API Key）
-GROQ_API_KEY = "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"
 
 # Notion API Headers
 headers = {
