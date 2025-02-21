@@ -2,10 +2,15 @@ import requests
 import re
 import json
 import groq  # 使用 Groq API 取代 OpenAI API
+import os
 from flask import Flask, request
 
 app = Flask(__name__)
 
+
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
+NOTION_API_KEY = os.environ.get("NOTION_API_KEY")
+NOTION_DATABASE_ID = os.environ.get("NOTION_DATABASE_ID")
 
 
 # Notion API Headers
